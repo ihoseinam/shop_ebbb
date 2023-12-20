@@ -32,7 +32,6 @@ class ApiRepository private constructor() {
                         request.onNotSuccess("Not Success")
                 }
 
-
                 override fun onFailure(call: Call<MainModel>, t: Throwable) {
                     request.onError("Error")
                 }
@@ -41,6 +40,7 @@ class ApiRepository private constructor() {
         )
 
     }
-
-
+private fun test(){
+    //تست گیتتتتتت
+}
 }
