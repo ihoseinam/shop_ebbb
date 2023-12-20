@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Shop Ebbb</string>
+    <string name="show">SHOW</string>
+    <string name="pasi"> ebbbb </string>
+    <string name="sondi"> نام : یونس محمدی \n لقب : اتباع,سندی \n ملیت : نامشخص  (فاقد شناسنامه) \n گرایش : خنثی \n مهارت : نا مشخص \n شغل : کارگر  ته قال دانشجویار  </string>
+    <string name="psamo"> نام : معید خسروی \n لقب : پسر عمو, عمو, مخبر  \n ملیت : USF ( سرزمین های فالزی,آسفیچ) \n گرایش : آنال \n مهارت : درازکشیدن طولانی,خلق لهجه های جدید، کصکلک های طوفانی و پرقدرت \n شغل : دراز کشیدن در تخت و دست در جیب پدر </string>
+    <string name="hojat">  نام : حجت حسین زاده \n لقب : حجت لس لس , مردک رطوبتی ,فراز دول  \n ملیت : USF ( سرزمین های فالزی,سرخنگ) \n گرایش :هرچی باشه فقط لس \n مهارت : دارای چند شخصیت, بسته به مکان بین شخصیت ها جا به جا میشه\n شخصیت پیش فرض : لاشی ترین و جاکش ترین حجت\n شغل : ادیتور ته قال دانشجویار     </string>
+    <string name="sardar"> نام : سجاد سورگی \n لقب : سردار  \n ملیت : سورگ \n گرایش : در دست برسی \n مهارت : حمل و نقل,غذارسانی به مردم فقیر در ساعات بامداد \n شغل : وجب کردن خیابان ها با انواع ماشین</string>
+    <string name="mmd"> نام : سید محمد مهدی حاطمی برون  \n لقب :  تک سلولی  \n ملیت : برون \n گرایش : در دست برسی \n مهارت : رانندگی \n شغل : دست در جیب همسر </string>
+    <string name="amir"> نام : امیر محمد حسن زاده  \n لقب :  امییییررررر,امام  \n ملیت : بیرجند \n گرایش : به هرچیزی نه نمیگه \n مهارت : کصکشی با 206 \n شغل : جاکشی </string>
+    <string name="mohsen"> نام : محسن کارکن \n لقب : حضرت ,محسن دهن گاییده \n ملیت : بیرجند \n گرایش : هرچی باشه فقط لس  \n مهارت : کصکلک شدید همراه با جاکشی ,حمل و نقل,شبکن \n شغل :راهزنی , قاچاق اوگان,سوخت کشی</string>
+    <string name="jasem"> نام پدر : محسن \n سرپرست فعلی : حجت  </string>
+    <string name="showmm">مشـاهده مـحصول</string>
+    <string name="jhariiiiiiiiiiiiiid">جهت خرید این محصول\n  مبلغ پیشنهادی خود را ارسال کنید</string>
+    <string name="sdds">pasi</string>
+    <string name="j"> خـریـد محصول</string>
+    <string name="sdsd">قیمت پایه:</string>
+    <string name="mozayde">مزایده حیوانات</string>
+    <string name="sdsdsd">مزایده حیوانات</string>
+    <string name="howviii">مشاهده ویدیو ها این محصول</string>
+    <string name="howw">مشاهده</string>
+    <string name="asiaa">به فروشگاه حیوانات عه ب ب خوش آمدید</string>
+    <string name="shop_animals">مزایده حیوانات</string>
+    <string name="sdsdsdd">فروش با پایین ترین قیمت ممکن</string>
+    <string name="hosey"> نام :حسین احمدی  \n لقب :  دای حوسی , سردسته کصکش ها , همستر  \n ملیت : USF ( سرزمین های فالزی,نوقند) \n   </string>
+    <string name="todo">todo</string>
+    <string name="afer">در صورت خرید بیش از دو محصول % 15  تخفیف اعمال خواهد شد</string>
+    <string name="rrrrrrrrrr">خــوش آمـدیـد</string>
+    <string name="entertext">پیام</string>
+    <string name="send_tex">ارسال پیام</string>
+    <string name="namesender">نام فرستنده</string>
+    <string name="sentextiii">هرگونه نظر یا پیشنهاد در مورد این محصول دارید برای ما ارسال کنید</string>
+
+
+</resources>
