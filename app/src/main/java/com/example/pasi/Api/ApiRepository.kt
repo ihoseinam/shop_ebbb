@@ -40,7 +40,5 @@ class ApiRepository private constructor() {
         )
 
     }
-private fun test(){
-    //تست گیتتتتتت
-}
+
 }

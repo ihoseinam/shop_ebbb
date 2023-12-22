@@ -27,8 +27,9 @@ class MainActivity2 : AppCompatActivity(), Request {
         setContentView(binding.root)
 
         title = ""
+
         if (!isInternetAvailable(this.applicationContext)) {
-            dialog()
+            snack(text = "اتصال اینترنت وجود ندارد")
         }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val name = intent.getStringExtra("name")
@@ -68,12 +69,12 @@ class MainActivity2 : AppCompatActivity(), Request {
             finish()
         }
         binding.btnBuyItem.setOnClickListener {
-                openTelegram("tg://resolve?domain=i_hoseinam")
+            openTelegram("tg://resolve?domain=i_hoseinam")
         }
     }
 
     private fun snack(text: String) {
-        val snake = Snackbar.make(binding.root, "no internet ", Snackbar.LENGTH_LONG)
+        val snake = Snackbar.make(binding.root, "no internet ", Snackbar.LENGTH_SHORT)
         snake.animationMode = ANIMATION_MODE_SLIDE
         snake.setText(text)
         snake.setBackgroundTint(Color.DKGRAY)
