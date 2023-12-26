@@ -38,6 +38,7 @@ class ProductRecyclerAdapter(
                 intent.putExtra("price", product.price)
                 intent.putExtra("img", product.imgAddresss)
                 intent.putExtra("rating",product.rating)
+                intent.putExtra("info",product.info)
                 context.startActivity(intent)
             }
         }

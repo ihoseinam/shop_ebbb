@@ -36,23 +36,18 @@ class MainActivity2 : AppCompatActivity(), Request {
         val price = intent.getStringExtra("price")
         val img = intent.getIntExtra("img", 0)
         val rating = intent.getDoubleExtra("rating", 0.0)
+        val info = intent.getStringExtra("info")
+
         setSupportActionBar(binding.toolbar)
+
         binding.ratingbar.rating = rating.toFloat()
         binding.textView4.text = name
         binding.imgItemprodoct.setImageResource(img)
         binding.txtNameItemp.text = name
         binding.txtPriceItemprr.text = price
-        when (img) {
-            R.drawable.sondi -> binding.textView.text = getString(R.string.sondi)
-            R.drawable.psamo -> binding.textView.text = getString(R.string.psamo)
-            R.drawable.hojat -> binding.textView.text = getString(R.string.hojat)
-            R.drawable.mmd -> binding.textView.text = getString(R.string.mmd)
-            R.drawable.sardar -> binding.textView.text = getString(R.string.sardar)
-            R.drawable.hazrat -> binding.textView.text = getString(R.string.mohsen)
-            R.drawable.jasem -> binding.textView.text = getString(R.string.jasem)
-            R.drawable.amir -> binding.textView.text = getString(R.string.amir)
-            R.drawable.hosey -> binding.textView.text = getString(R.string.hosey)
-        }
+
+        binding.textView.text = info
+
 
         val zori = binding.edt.text
         val boji = binding.edtSenderName.text
@@ -60,7 +55,7 @@ class MainActivity2 : AppCompatActivity(), Request {
             binding.progressBar.visibility = View.VISIBLE
             ApiRepository.instance.sendText(
                 "0GiVMeIQWwaEXHuAEEV053a4IJ1bUBj7XjkFxNAR",
-                "پیام دریافتی برای:\n\n نام محصول : ${name}\n قیمت فعلی:${price}\nامتیاز فعلی:${rating}\nنام فرستنده: ${boji}\nپیام فرستنده:${zori}",
+                "پیام دریافتی برای:\n نام محصول : ${name}\n قیمت فعلی:${price}\nامتیاز فعلی:${rating}\nنام فرستنده: ${boji}\nپیام فرستنده:${zori}",
                 this
             )
 
@@ -105,16 +100,6 @@ class MainActivity2 : AppCompatActivity(), Request {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
 
-    private fun dialog() {
-        val dialog = AlertDialog.Builder(this)
-        dialog.setCancelable(false)
-        dialog.setTitle(" شما آفلاین هستید ")
-        dialog.setMessage("اتصال اینترنت وجود ندارد")
-        dialog.setNeutralButton("خروج") { _, _ -> finishAffinity() }
-        dialog.setNegativeButton("بازگشت به اپ ") { _, _ -> }
-        dialog.setPositiveButton("تلاش مجدد") { _, _ -> recreate() }
-        dialog.create().show()
-    }
 
     override fun onSuccess(data: MainModel) {
         binding.edt.text?.clear()

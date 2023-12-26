@@ -10,22 +10,24 @@ import com.example.pasi.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    val data = arrayOf(
-        DataProduct(1, "حسین","اتمام موجودی", R.drawable.hosey,5.0),
-        DataProduct(2, "معید", "20,000 $", R.drawable.psamo,4.5),
-        DataProduct(3, "یونس", "1,000 $", R.drawable.sondi,0.5),
-        DataProduct(4, " حجت", "5,000 $", R.drawable.hojat,2.5),
-        DataProduct(5, " سجاد", "8,000 $", R.drawable.sardar,4.0),
-        DataProduct(6, "محسن", "10,000 $", R.drawable.hazrat,3.0),
-        DataProduct(7, "ممد ", "3,000 $", R.drawable.mmd,1.5),
-        DataProduct(8, "جاسم ", "10 $", R.drawable.jasem,0.5),
-        DataProduct(9,"امیر","7,000 $",R.drawable.amir,3.5)
-    )
-
+    lateinit var data :Array<DataProduct>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        data = arrayOf(
+            DataProduct(1, "حسین","اتمام موجودی", R.drawable.hosey,5.0,getString(R.string.hosey)),
+            DataProduct(2, "معید", "20,000 $", R.drawable.psamo,4.5,getString(R.string.psamo)),
+            DataProduct(3, "یونس", "1,000 $", R.drawable.sondi,0.5,getString(R.string.sondi)),
+            DataProduct(4, " حجت", "5,000 $", R.drawable.hojat,2.5,getString(R.string.hojat)),
+            DataProduct(5, " سجاد", "8,000 $", R.drawable.sardar,4.0,getString(R.string.sardar)),
+            DataProduct(6, "محسن", "10,000 $", R.drawable.hazrat,3.0,getString(R.string.mohsen)),
+            DataProduct(7, "ممد ", "3,000 $", R.drawable.mmd,1.5,getString(R.string.mmd)),
+            DataProduct(8, "جاسم ", "10 $", R.drawable.jasem,0.5,getString(R.string.jasem)),
+            DataProduct(9,"امیر","7,000 $",R.drawable.amir,3.5,getString(R.string.amir))
+        )
+
         title = ""
         setSupportActionBar(binding.toolbar)
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
